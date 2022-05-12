@@ -1,0 +1,54 @@
+/*.body{
+
+}*/
+
+@media screen and (max-width:599)
+ {
+    .home{
+        width: 50%;
+    }
+
+    .body
+    {
+        width: 30%;
+        background-color: brown;
+    }
+    
+}
+@media screen  and (max-width:767)
+ {
+    .home{
+        width: 33.333%;
+    }
+
+    .body
+    {
+        width: 0%;
+        background-color: teal;
+    }
+}
+@media screen  and (max-width:991)
+ {
+    .home{
+        width: 25%;
+    }
+
+    .body
+    {
+     background-color: springgreen;
+        width: 1%;
+    }
+}
+@media screen  and (max-width:1200)
+ {
+    .home{
+        width: 75%;
+    }
+    .body
+    {
+        width: 0%;
+        background-color: teal;
+
+    }
+    
+}

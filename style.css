@@ -1,0 +1,635 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.clearfix
+{
+    clear: both;
+}
+.home
+{
+    background-image: url(slider/slider-01.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.home-opacity
+{
+    height: 100vh;
+    background-color: rgba(7, 7, 7,.9);
+    
+}
+.fokir
+{
+    width: 80%;
+    margin: auto;
+   
+}
+.fokir_button
+{
+    
+    width: 50%;
+    float: left;
+}
+.fokir_button button
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    background: transparent;
+    color: #ff305b;
+}
+
+
+.foki_ul
+{
+    
+    width: 50%;
+    float:right;
+    font-size: 20px;
+    
+}
+.foki_ul li
+{
+    float:left;
+    list-style: none;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+
+
+.hom_text
+{
+    width: 50%;
+    margin: auto;
+    padding: 10px 25px;
+    text-align: center;
+    margin-top: 15%;
+}
+.hom_text h3
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.hom_text h1
+{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ff305b;
+    margin: 15px ;
+}
+.hom_text h4
+{
+    font-size: 20px;
+    color: #fff;
+}
+.hover-h4
+{
+   
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    transition-duration:3s;
+    transition-property: width;
+    
+}
+
+.hover-h4::after
+{
+    content: 'Designer Develop';
+    font-size: 25px;
+    background: transparent;
+}
+.hover-h4:hover
+{
+    width: 443px;
+    height: 50px;
+    color: #fff;
+}
+
+.About
+{
+    margin: auto;
+    /*background-color: aqua;*/
+   
+}
+.contener
+{
+    margin: auto;
+    width: 95%;
+    
+   /* background-color yellow;*/
+    
+}
+
+.Abot_img
+{
+
+    width: 50%;
+    height: 100%;
+    float:left ;
+    
+}
+.Abot_img .one
+{
+    width: 360px;
+    height: 440px;
+    margin: 10% 30%;
+    border-radius: 5px;
+    border: solid 8px #555555;
+    position: relative;
+}
+
+.Abot_img .two
+{
+   position: absolute;
+   top: 25px;
+   left: 26px;
+   width: 100%;
+   height: 0%;
+   transition-duration:3s;
+   transition-property: height;
+}
+.two img
+{
+    border-radius:10px;
+}
+
+.hover-tow
+{
+    width: 360px;
+    height: 100%;
+    background-color: rgb(240, 226, 190,0.7);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;  
+   
+}
+.Abot_img .two:hover
+{
+    height:100%;
+    
+}
+
+.Abot_text
+{  
+    width: 50%;
+    float: right;
+    color: #555555;
+    margin-top: 5%;
+}
+.Abot_text h2::before
+{
+    content:'';
+    width: 5px;
+    height:45%;
+    background-color: #ff305b;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+.hr
+{
+    width: 80%;
+    height: -80px;
+    margin: auto;
+    color: rgba(231, 219, 219,0.8);
+    border-style:dashed;
+}
+.Abot_text h2
+{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 15px 20px;
+    position: relative;
+}
+.Abot_text p
+{
+    font-size: 18px;
+    padding: 5px 15px 0px;
+    margin: 15px 5px;
+}
+.table-ul
+{   
+    width: 90%;
+    margin: 10px 10px;
+}
+.table-ul li
+{
+    color:#555555;
+    list-style: none;
+    padding: 8px 25px;
+    margin-left: 25px;   
+}
+.table-ul span
+{
+  font-size: 18px;
+  color: #000;
+}
+.buton
+{  
+    width: 70%;
+    padding: 10px 10px;
+    text-align: center;
+}
+.buton button
+{
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ff305b;
+}
+
+
+
+
+
+.Servcesi
+{
+    width: 100%;
+    height: 80%;
+    margin-bottom: 40px;
+    background-color: #f1f1f1;
+}
+.contener-Serv
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.contener-Serv h2
+{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+ .our-hr
+{
+    width: 90px;
+    height: 1px;
+    margin: 0px auto;
+    background-color: #ff305b;
+}
+.our-hrs
+{
+    width: 190px;
+    height: 1px;
+    margin: 7px auto;
+    background-color: #ff305b;
+}
+
+.adipisicing
+{
+    width: 25%;
+    float: left;
+    padding: 25px 4px;
+    text-align: center;
+    margin: 50px 0px;
+    box-sizing: border-box;
+}
+.adipisicing:hover
+{
+    transform: scale(1.1,1.1);
+    background-color: white;
+}
+
+.adipisicing h3
+{
+    font-size: 25px;
+    padding: 15px 3px;
+    font-weight: 600;
+}
+.adipisicing p
+{
+    font-size: 19px;
+}
+.DESIGN
+{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    
+}
+
+
+.Portfolio
+{
+    text-align: center;
+
+}
+.contenr-folio
+{
+    width: 80%;
+    margin:auto;
+    padding-top:5px;
+}
+
+.contenr-folio
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 35px 40px;
+}
+.Port-ul
+{
+    width: 50%;
+    margin: 50px auto;   
+}
+.Port-ul li
+{
+    list-style: none;
+    float: left;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    padding: 5px 13px;
+}
+
+.contener-img-folio
+{
+    width: 100%;
+    margin: 35px auto ;
+}
+
+.Portfolio-img
+{
+    width: 33%;
+    padding: 8px;
+    border-radius: 10px;
+    float: left;
+}
+.Portfolio-img:hover
+{
+    transform: scale(1.1,1.1);
+    background: transparent;
+    
+}
+.Portfolio-img img
+{
+    width: 100%;
+  border-radius: 10px;
+}
+
+.Team-members
+{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 50%;
+    margin: 10px auto;
+    position: relative;
+}
+.contener-Team
+{
+    width: 70%;
+    margin:40px auto;
+    text-align: center;
+    background-color:#f1f1f1;
+    position: absolute;
+    top: 30px;
+    left:  15%;
+}
+.members
+{
+    width: 24%;
+    float: left;
+    margin: 15px 5px ;
+    padding: 50px 0px;
+}
+.members h2
+{
+    padding: 10px;
+    font-size: 30px;
+}
+.members h4
+{
+    padding: 10px;
+    color: #555555;
+}
+.contener-Feedback
+{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+}
+
+.contener-Feedback h2
+{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 25px 5px;
+}
+
+.ander
+{
+    width: 50%;
+    height: 50%;
+    background-color:#f1f1f1;
+    margin: 45px auto 0px;
+}
+.ander-text
+{
+    width: 65%;
+    margin: 35px 0px;
+    float: right
+}
+.ander-text h3
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 10px 0px;
+}
+.ander-text h6
+{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.ander-text p
+{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 5px;
+}
+
+
+.ander-space
+{
+    width: 35%;
+    height: 100%;
+    background-color: #ff305b;
+    position: relative;
+    overflow: hidden;
+    
+}
+.ander-tow-space
+{
+    width: 200%;
+    height: 120%;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    transform: skewy(-45deg);
+}
+
+.two-ander
+{
+    background-image: url(testimonial/2.jpg);
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+
+.Our-Blog
+{
+    width: 100%;
+    text-align: center;
+    background-color:#f1f1f1;
+}
+.Our-Blog h2
+{
+    font-size: 40px;
+    font-weight: 600;
+    padding:20px 10px;
+}
+.contener-blog
+{
+    width: 80%;
+    margin:15px auto;
+}
+.development
+{
+    width: 30%;
+    background-color: white;
+    float: left;
+    margin: 20px 20px;
+    padding: 15px 20px;
+}
+.development img
+{
+    width: 100%;
+}
+.development h5
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 5px;
+    text-align: left;
+}
+.development h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 5px;
+}
+.development p
+{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+.development h4
+{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.Contact-Us
+{
+    width: 100%;
+    text-align: center;
+}
+.Contact-Us h2
+{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 10px;
+}
+.form
+{
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px 0px;
+    text-align: center
+}
+
+.user
+{
+    width: 40%;
+    height: 6%;
+    border-radius: 5px;
+    border-color:rgba(255, 48, 91,.59);
+    margin: 5px;
+}
+.Message
+{
+    width: 82%;
+    height: 6%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border-color: rgba(255, 48, 91,.59);
+}
+.Message2
+{
+    width: 82%;
+    height: 15%;
+    margin: 15px 0px;
+    border-radius: 5px;
+    border-color:rgba(255, 48, 91,.59);
+}
+.form button
+{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color:  #ff305b;
+    border-style: none;
+    width:20%;
+    height: 5%;
+    color: #f1f1f1;
+    margin: 15px;
+    padding: 5px 1px;
+}
+
+.copy-right
+{
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+    text-align: center;
+    padding: 50px 0px 0px;
+}
+.copy-right h3
+{
+    color: #f1f1f1;
+}
+.copy-right span
+{
+    color: #ff305b;
+}
