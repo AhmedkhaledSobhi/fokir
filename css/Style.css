@@ -1,0 +1,715 @@
+    :root{
+    --main-color:#333333 !important;
+    --secand-color:#ff305b !important;
+    --bg-section:#f1f1f1 !important;
+    }
+    body{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: Roboto,sans-serif;
+    overflow-y: hidden;
+    }
+
+    .bg-section{
+        color: black;
+        background-color: var(--bg-section);
+    }
+
+/* =========== Start Navbar =============== */
+    #scrollNav
+    {
+        transition: all 2s !important;
+    }
+    nav .navbar{
+        background-color: transparent;
+    }
+    .navbar a[class="navbar-brand"]{
+        font-size: 24px;
+        font-weight: 800;
+        line-height:25px;
+        font-family: Roboto, sans-serif;
+        color: var(--secand-color);
+    }
+    .navbar li a{
+        color: #fff !important;
+        transition: all 0.8s;
+
+    }
+    .navbar a:hover{
+        color: var(--secand-color) !important;
+    }
+   
+
+/* =========== End Navbar =============== */
+
+/* =========== Start Home Header ============= */
+    header.bg-img{
+    background-image: url(../image/slider-01.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    }
+    header .bg-layer{
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    header h1{
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 77px;
+        font-family: Source Sans Pro, sans-serif;
+        color: var(--secand-color);
+    }
+    #btnUp{
+        display: none ;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 45px !important;
+        height: 45px !important;
+        border: 0;
+        color: var(--secand-color);
+        background-color: #74727253;
+        transition-duration: all 15s;
+        z-index: 9999999;
+    }
+    #btnUp:hover{
+      color:#bd0227f4;  
+    }
+/* ================== loadingScrean ============= */
+
+    #loadingScrean{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999999999999999999;
+        background-color:rgba(0, 0, 0, .9);
+    }
+    #loadingScrean .spinner {
+        margin: 100px auto;
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        font-size: 10px;
+      }
+      
+      .spinner > div {
+        background-color: #EC2403;
+        height: 200%;
+        width: 6px;
+        display: inline-block;
+        
+        -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        animation: sk-stretchdelay 1.2s infinite ease-in-out;
+      }
+      
+      .spinner .rect2 {
+        -webkit-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+      }
+      
+      .spinner .rect3 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+      
+      .spinner .rect4 {
+        -webkit-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+      }
+      
+      .spinner .rect5 {
+        -webkit-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+      }
+      
+      @-webkit-keyframes sk-stretchdelay {
+        0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+        20% { -webkit-transform: scaleY(1.0) }
+      }
+      
+      @keyframes sk-stretchdelay {
+        0%, 40%, 100% { 
+          transform: scaleY(0.4);
+          -webkit-transform: scaleY(0.4);
+        }  20% { 
+          transform: scaleY(1.0);
+          -webkit-transform: scaleY(1.0);
+        }
+      }
+      
+      
+/* ================== loadingScrean ============= */
+
+
+/* =========== End Home Header =============== */
+
+/* =========== End About ===================== */
+   .about-box{
+        border-radius: 5px;
+        box-shadow: 0 0 0 8px #555555 inset;
+        display: block;
+       
+    }
+    .profile-photo{
+        position: relative;
+        top: 25px;
+        left: 25px;
+        overflow: hidden;
+    }
+    .layer-photo{
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: all 2s;
+        top: 100%;
+    }
+    .profile-photo:hover .layer-photo{
+        top: 0;
+    }
+    .layer-photo i{
+        font-size: 25px !important;
+        color: #fff;
+        transition: all 1s;
+    }
+    .layer-photo i:hover{
+        color: var(--secand-color);
+    }
+    .desc-profile h2{
+        position: relative; 
+        padding-left:  15px; ;
+          
+    }
+    .desc-profile h2::before{
+        content: "";
+        position: absolute;   
+        left: 0px ;
+        top: 6px;
+        width: 4px !important;
+        height: 25px !important;
+        background-color: var(--secand-color);
+    }
+    .desc-profile p{
+        padding-right: 60px !important;
+        border-bottom: 1px dashed #999999;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    .profile-about > ul{
+        list-style: none none; 
+        padding-left: 0px;
+    }
+    .profile-about ul > li > span{
+        color: hsl(0, 0%, 2%);
+        font-weight:500;
+        line-height: 16px;
+    }
+    .profile-control .btn-danger{
+        border-color: var(--secand-color) ;
+        background-color: var(--secand-color);
+    }
+    .profile-control .btn-danger:hover{
+        background-color: #EC2403 !important;
+    }
+   
+/* =========== End About ===================== */
+
+/* =========== Start Services ===================== */
+    #Services h2{
+        position: relative;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 30px;
+    }
+    #Services h2::after{
+        content: "";
+        position: absolute;
+        top: 60px;
+        height: 1px;
+        width: 160px;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+        background-color: var(--secand-color);
+    }
+    #Services h2::before{
+        content: " ";
+        position: absolute;
+        border:solid  var(--secand-color);
+        border-width: 1px 0; 
+        top:55px;
+        padding: 4px 0 5px;
+        width: 70px;
+        left: 0;
+        right: 0;  
+        margin: 0 auto;
+    }
+    #Services .item{
+        transform: rotateZ('90deg');
+        transition: all 1s;
+    }
+    #Services .item i{
+        color: var(--secand-color);
+    }
+    #Services .item:hover{
+        background-color:#fff;
+        border-radius: 10px;
+    }
+    #Services .item:hover i{
+        font-size: 37px !important; 
+   }
+/* =========== End Services ===================== */
+
+/* =========== Start Portfolio ===================== */
+    #Portfolio h2{
+        position: relative;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 30px;
+    }    
+    #Portfolio h2::after{
+        content: '';
+        position: absolute;
+        top: 60px;
+        height: 0.5px;
+        width: 160px;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+        background-color: var(--secand-color);
+    }
+    #Portfolio h2::before{
+        content: "";
+        position: absolute;
+        border:solid  var(--secand-color);
+        border-width: 1px 0;
+        top: 55px;
+        padding: 4px 0 5px;
+        width: 70px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    #Portfolio .nav-tabs .nav-link.active{
+        color: var(--secand-color);
+        /* border: 0; */
+    }
+    
+    #Portfolio .nav-link{
+        color:var(--main-color);
+    }
+    #Portfolio .layer-Portfolio{
+        
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba(0, 0, 0,0.5);
+        transition: all 1ms;
+    }
+    #Portfolio .itemPortfolio{
+        width: 100%;
+        position: relative;
+    }
+    #Portfolio .itemPortfolio img{
+        transform:rotatey(90deg) ;
+        transition: all 1s;
+    }
+    #Portfolio .itemPortfolio:hover .layer-Portfolio{
+        z-index: 1;
+
+    }
+    #showImg{
+        position: absolute !important;
+        top: 30%;
+        display: none;
+        width: 50%;
+        height: 50%;
+        z-index: 99;
+    }
+
+/* =========== End Portfolio ===================== */
+
+/* =========== Start fun-facts-area ===================== */
+   
+    #facts-area .item i{
+        color: var(--secand-color);
+    }
+
+/* =========== End fun-facts-area ===================== */
+
+/* =========== Start Testimonial ====================== */
+    #Testimonial h2{
+        position: relative;
+        font-weight: 800;
+        font-size: 37px;
+        line-height: 30px;
+        text-transform: capitalize;
+    }
+    #Testimonial h2::after{
+        content: "";
+        position: absolute;
+        height:0.5px;
+        width: 160px;
+        top: 55px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background-color: var(--secand-color);
+    }
+    #Testimonial h2::before{
+        content: "";
+        position: absolute;
+        border: solid var(--secand-color); 
+        width: 70px;
+        top: 50px;
+        padding: 4px 0 5px ;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        border-width: 1px 0;
+    }
+    #Testimonial .item-carousel{
+        position: relative;
+        width: 110%;
+        height: 35vh;
+        padding: 30px 35px;
+        border-radius: 3px;
+    }
+    #Testimonial .item-carousel .item-corner{
+        background-color: var(--secand-color) !important;
+        width: 55%;
+        height: 110%;
+        position: absolute;
+        top: -196px;
+        left: -280px;
+        transform: rotateZ(45deg);
+    }
+    #Testimonial .item-img{
+        
+        z-index: 1;
+    }
+    #Testimonial .item-content .review i{
+        color:#f1c30d;
+    }
+    .carousel-indicators [data-bs-target]{
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-indicators [data-bs-target]{
+        background-color: var(--secand-color) ;
+
+    }
+/* =========== End Testimonial ======================== */
+
+/* =========== End Blog =============================== */
+    #Blog h2{
+        font-size:40px ;
+        font-weight: 800;
+        line-height: 30px;
+        position: relative;
+    }
+    #Blog h2::after{
+        content: "";
+        position: absolute;
+        width: 160px;
+        height: 0.5px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        top: 60px;
+        background-color: var(--secand-color);
+    }
+    #Blog h2::before{
+        content: "";
+        position: absolute;
+        border: solid var(--secand-color);
+        border-width: 1px 0;
+        width: 70px;
+        top: 55px;
+        padding: 5px 0 5px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+    #Blog .item h5{
+        transition: all 1s;
+    }
+    #Blog .row .item h5:hover{
+        color: var(--secand-color);
+    }
+    #Blog .item a{
+        transition: all 1s;
+    }
+    #Blog .item a:hover{
+        color: var(--secand-color) !important;
+    }
+    
+/* =========== End Blog =============================== */
+
+/* =========== Start Contact ========================== */
+      #Contact h2{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 30px;
+        position: relative;
+      }  
+      #Contact h2::after{
+        content: "";
+        position: absolute;
+        width: 160px;
+        height:0.5px;
+        background-color: var(--secand-color);
+        top: 55px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      #Contact h2::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        border:solid var(--secand-color);
+        border-width: 1px 0;
+        padding: 5px 0px 5px;
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+     
+/* =========== End Contact ============================ */
+      footer{
+        height: 20vh;
+        background-color: var(--main-color);
+      }
+      footer i{
+        color: #fff;
+        font-size: 20px !important;
+        transition: all 1s;
+      }
+      footer h6{
+        color: #fff;
+      }
+      footer h6 a{
+        color:var(--secand-color);
+        text-decoration: none;
+        transition: all 1s;
+      }
+      footer i:hover{
+        color: var(--secand-color);
+      }
+      
+      footer h6 a:hover{
+        color:var(--secand-color);
+        text-decoration: underline;
+      }
+
+      
+
+
+/* =========== Start @madia-Screan ======================== */
+
+@media (max-width: 767.98px) {
+    
+    nav .w-75{
+        width: 90% !important;
+    }
+   
+    #Home h1{
+        font-size: 47px;
+    }
+
+    #btnUp{
+        bottom: 65px;
+        right: 8px;
+    }
+    
+/* =========== Start About ======================== */
+
+
+    #About .w-75 {
+        width: 84% !important;
+    }
+    .layer-photo i{
+        margin: 0 7px !important;
+    }
+    #About .row > * {
+        padding-right: 0;
+        padding-left:0 ;
+    }
+    #About .col-md-7{
+        margin-top: 40px;
+    }
+    #About .desc-profile p{
+        padding-right: 0 !important;
+    }
+    #About .profile-about{
+        display:inline-block !important;
+    }
+    #About .profile-control{
+        display: flex !important;
+    }
+    #About .profile-control a{
+        /* padding-right: 10px !important; */
+        /* padding-left: 10px !important; */
+        padding: 3px 10px !important;
+    }
+/* =========== End About ======================== */
+
+/* =========== Start Services ======================== */
+
+    #Services .w-75{
+        width: 95% !important;
+        padding-top: 35px;
+    }
+    #Services h2{
+        font-weight: 600;
+        font-size: 35px;
+    }
+    #Services h2::after{
+        top: 45px;
+        width: 100px;
+    }
+    #Services h2::before{
+        width: 50px;
+        top: 40px;
+    }
+
+/* =========== End Services ======================== */
+
+/* =========== Start Portfolio ======================== */
+    #Portfolio .w-75{
+        width: 95% !important;
+        padding-top: 35px;
+        margin-bottom: 35px;
+    }
+    #Portfolio h2{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #Portfolio h2::after{
+        top: 45px;
+        width: 100px;
+    }
+    #Portfolio h2::before{
+        width: 50px;
+        top: 40px;
+    }
+
+    #Portfolio .nav-tabs{
+        border-bottom:0 !important ;
+    }
+    #showImg{
+        left: 0;
+      
+      }
+
+/* =========== End Portfolio ======================== */
+
+/* =========== Start facts-area ======================== */
+
+    #facts-area .w-75{
+        width: 90% !important;
+    }
+
+/* =========== Start Client ======================== */
+
+    #Testimonial .w-75{
+        width: 100% !important;
+        margin-top: 25px;
+    }
+    #Testimonial h2{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #Testimonial h2::after{
+        top: 45px;
+        width: 100px;
+    }
+    #Testimonial h2::before{
+        width: 50px;
+        top: 40px;
+    }
+    #Testimonial .item-content{
+        flex-direction: column;
+    }
+    #Testimonial .item-carousel{
+        width: 100%;
+        height: 60vh;
+        padding: 0px 25px;
+    }
+    #Testimonial .item-carousel .item-corner{
+        top: -140px;
+        left: -200px;
+    }
+    #Testimonial .item-img{
+        width: 40% !important;
+        margin-top: 20px;
+    }
+
+
+/* =========== End Client ======================== */
+
+/* =========== Start Blog ======================== */
+    #Blog h2{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #Blog h2::after{
+        top: 45px;
+        width: 100px;
+    }
+    #Blog h2::before{
+        width: 50px;
+        top: 40px;
+    }
+    #Blog .w-75{
+        width: 95% !important;
+    }
+/* =========== End Blog ======================== */
+
+/* =========== Start Contact ======================== */
+    #Contact h2{
+        font-weight: 600;
+        font-size: 30px;
+    }
+    #Contact h2::after{
+        top: 45px;
+        width: 100px;
+    }
+    #Contact h2::before{
+        width: 50px;
+        top: 40px;
+    }
+    #Contact .w-75{
+        width: 90% !important;
+    }
+/* =========== End Contact ======================== */
+
+
+footer h6{
+    font-size: 12px;
+  }
+
+ }
+
+
+
+
+    .audio{
+    bottom: 5px !important;
+    z-index: 99999999999999;
+    }
