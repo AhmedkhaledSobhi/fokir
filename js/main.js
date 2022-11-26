@@ -66,7 +66,7 @@ var typed = new Typed('.type', {
 // ================ Start btnUp toggle bg-color ===========
 
   $('#btnUp').click(function () {
-    $('html,body').animate({scrollTop:0},1000);
+    $('html,body').animate({scrollTop:0},70);
     
   })
 // ================ Start btnUp toggle bg-color ===========
