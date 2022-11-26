@@ -12,7 +12,7 @@ var typed = new Typed('.type', {
   $('nav a').click(function (e) {
     let linkHref=$(e.target).attr('href');
     let sectionOffset =$(linkHref).offset().top;
-    $('html , body').animate({scrollTop:sectionOffset} , 1000)
+    $('html , body').animate({scrollTop:sectionOffset} , 70)
   })
 
 // =============End typed Header =================
